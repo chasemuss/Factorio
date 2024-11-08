@@ -1,0 +1,69 @@
+[
+    {
+        "Name": "Automation Science Pack",
+        "Ingredients": [
+            {
+                "Name": "Copper Plate",
+                "Quantity": 1.0
+            },
+            {
+                "Name": "Iron Gear",
+                "Quantity": 1.0
+            }
+        ],
+        "Base Time (Seconds)": 5.0,
+        "Produced By": [
+            "Assembling Machine 1",
+            "Assembling Machine 2",
+            "Assembling Machine 3"
+        ]
+    },
+    {
+        "Name": "Copper Plate",
+        "Ingredients": [
+            {
+                "Name": "Copper Ore",
+                "Quantity": 1.0
+            }
+        ],
+        "Base Time (Seconds)": 3.2,
+        "Produced By": [
+            "Stone Furnace",
+            "Steel Furnace",
+            "Electric Furnace",
+            "Foundry"
+        ]
+    },
+    {
+        "Name": "Iron Plate",
+        "Ingredients": [
+            {
+                "Name": "Iron Ore",
+                "Quantity": 1.0
+            }
+        ],
+        "Base Time (Seconds)": 3.2,
+        "Produced By": [
+            "Stone Furnace",
+            "Steel Furnace",
+            "Electric Furnace",
+            "Foundry"
+        ]
+    },
+    {
+        "Name": "Iron Gear",
+        "Ingredients": [
+            {
+                "Name": "Iron Plate",
+                "Quantity": 2.0
+            }
+        ],
+        "Base Time (Seconds)": 0.5,
+        "Produced By": [
+            "Assembling Machine 1",
+            "Assembling Machine 2",
+            "Assembling Machine 3",
+            "Foundry"
+        ]
+    }
+]

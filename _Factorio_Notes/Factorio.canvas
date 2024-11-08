@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"22bc693605d34825","x":-800,"y":-460,"width":250,"height":60,"type":"text","text":"Tungsten Ore"},
+		{"id":"168176ff836ae5c8","x":-800,"y":-680,"width":250,"height":60,"type":"text","text":"Calcite"},
+		{"id":"f274adca3fa525eb","x":-200,"y":-680,"width":250,"height":60,"type":"text","text":"Steam"},
+		{"id":"75b614db966cf4f1","x":-200,"y":-560,"width":250,"height":60,"color":"4","type":"text","text":"Artillery Shell"},
+		{"id":"2fa99296f218895f","x":-200,"y":-800,"width":250,"height":60,"color":"4","type":"text","text":"Cliff Explosives"},
+		{"id":"b3cb0a519dcae119","x":-200,"y":-920,"width":250,"height":60,"type":"text","text":"Molten Copper"},
+		{"id":"d992e68b836093fd","x":-200,"y":-1040,"width":250,"height":60,"type":"text","text":"Molten Iron"},
+		{"id":"b3ecf3a7136087d3","x":-200,"y":-1160,"width":250,"height":60,"type":"text","text":"Heavy Oil"},
+		{"id":"190b143a7e3fb0f3","x":320,"y":-460,"width":250,"height":60,"type":"text","text":"Tungsten Plate"},
+		{"id":"bb20bd2c22ecae13","x":320,"y":-250,"width":250,"height":60,"type":"text","text":"Tungsten Carbide"},
+		{"id":"b007bd7566d45dea","x":-200,"y":-250,"width":250,"height":60,"type":"text","text":"Carbon"},
+		{"id":"2fde433623faa1a7","x":-800,"y":-250,"width":250,"height":60,"type":"text","text":"Coal"},
+		{"id":"707c7259baa12c51","x":-800,"y":-80,"width":250,"height":60,"type":"text","text":"Sulfuric Acid"}
+	],
+	"edges":[
+		{"id":"560b048c76a57538","fromNode":"168176ff836ae5c8","fromSide":"right","toNode":"f274adca3fa525eb","toSide":"left","label":"Acid Neutralization"},
+		{"id":"ea998e64786101e9","fromNode":"168176ff836ae5c8","fromSide":"right","toNode":"75b614db966cf4f1","toSide":"left"},
+		{"id":"b1ac3e27616e8374","fromNode":"168176ff836ae5c8","fromSide":"right","toNode":"2fa99296f218895f","toSide":"left"},
+		{"id":"7b58111b8b204200","fromNode":"168176ff836ae5c8","fromSide":"right","toNode":"b3cb0a519dcae119","toSide":"left"},
+		{"id":"68e14556e0e24ecd","fromNode":"168176ff836ae5c8","fromSide":"right","toNode":"d992e68b836093fd","toSide":"left"},
+		{"id":"a346304005fb6293","fromNode":"168176ff836ae5c8","fromSide":"right","toNode":"b3ecf3a7136087d3","toSide":"left","label":"Simple Coal Liquifaction"},
+		{"id":"1710298b91339928","fromNode":"22bc693605d34825","fromSide":"right","toNode":"190b143a7e3fb0f3","toSide":"left"},
+		{"id":"3ba9de6a1b40a302","fromNode":"22bc693605d34825","fromSide":"right","toNode":"bb20bd2c22ecae13","toSide":"left"},
+		{"id":"a0d38bbe364f4b3d","fromNode":"d992e68b836093fd","fromSide":"right","toNode":"190b143a7e3fb0f3","toSide":"left"},
+		{"id":"10eb9d0b4f233fc5","fromNode":"707c7259baa12c51","fromSide":"right","toNode":"bb20bd2c22ecae13","toSide":"left"},
+		{"id":"b9b56a1c39a88cae","fromNode":"707c7259baa12c51","fromSide":"right","toNode":"b007bd7566d45dea","toSide":"left"},
+		{"id":"b0cadd1a45336dc6","fromNode":"2fde433623faa1a7","fromSide":"right","toNode":"b007bd7566d45dea","toSide":"left"},
+		{"id":"f2d7c1bf1ed00771","fromNode":"b007bd7566d45dea","fromSide":"right","toNode":"bb20bd2c22ecae13","toSide":"left"}
+	]
+}
