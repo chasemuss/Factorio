@@ -16,4 +16,5 @@ class WebScraper:
 
 if __name__ == '__main__':
   scraper = WebScraper()
-  scraper.grab_web_page("Tungsten plate")
+  web_page = scraper.grab_web_page("Tungsten plate")
+  print(web_page)
