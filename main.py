@@ -12,3 +12,8 @@ class WebScraper:
       print(f'Error: Cannot access url {url}')
 
     return response.text
+
+
+if __name__ == '__main__':
+  scraper = WebScraper()
+  scraper.grab_web_page("Tungsten Plate")
