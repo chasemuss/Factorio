@@ -8,8 +8,8 @@ class WebScraper:
     url = self.base_url + "/" + page.replace(' ', '_')
     response = requests.get(url)
 
-    if response.status != 200:
-      print(f'Error: Cannot access url {url}')
+    if response.status_code != 200:
+      print(f'Error {response.status_code}: Cannot access url {url}')
 
     return response.text
 
