@@ -1,20 +1,23 @@
-import requests
+import tomllib
+import json
 
-class WebScraper:
-  def __init__(self):
-    self.base_url = "https://wiki.factorio.com"
+def make_recipe_tree(target_item, layer = 0):
+  print(f'{'\t' * layer}{target_item = }')
+  recipe_tree = {}
+  for machine in recipes[target_item]:
+    
+    if recipes[target_item][machine]["Type"] == "Resource":
+      return { "Time": recipes[target_item][machine]["Time"], "Output": recipes[target_item][machine]["Output"] }
+    
+    for ingredient in recipes[target_item][machine]["Ingredients"]:
+      next_layer = make_recipe_tree(ingredient, layer + 1)
+      
+  
 
-  def grab_web_page(self, page):
-    url = self.base_url + "/" + page.replace(' ', '_')
-    response = requests.get(url)
+with open('Recipes.toml', 'rb') as items_fin:
+  recipes = tomllib.load(items_fin)
 
-    if response.status_code != 200:
-      print(f'Error {response.status_code}: Cannot access url {url}')
+# print(json.dumps(recipes, indent=4))
 
-    return response.text
-
-
-if __name__ == '__main__':
-  scraper = WebScraper()
-  web_page = scraper.grab_web_page("Tungsten plate")
-  print(web_page)
+item_to_make = "Automation_Science_Pack"
+make_recipe_tree(item_to_make)

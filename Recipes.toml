@@ -1,0 +1,97 @@
+title = "Recipes"
+
+[Automation_Science_Pack]
+[Automation_Science_Pack.Assembler]
+Type = "item"
+Time = 5
+Ingredients = { Copper_Plate = 1, Iron_Gear_Wheel = 1 }
+Outputs = { Automation_Science_Pack = 1 }
+
+[Calcite]
+[Calcite.Miner]
+Type = "Resource"
+Time = 1
+Output = { Calcite = 1 }
+
+[Copper_Ore]
+[Copper_Ore.Miner]
+Type = "Resource"
+Time = 1
+Output = { Copper_Ore = 1 }
+
+[Copper_Plate]
+[Copper_Plate.Furnace]
+Type = "Item"
+Time = 3.2
+Ingredients = { Copper_Ore = 1 }
+Output = { Copper_Plate = 1 }
+
+[Copper_Plate.Foundry]
+Type = "Item"
+Time = 3.2
+Ingredients = { Molten_Copper = 20 }
+Output = { Copper_Plate = 2 }
+
+[Iron_Gear_Wheel]
+[Iron_Gear_Wheel.Assembler]
+Type = "Item"
+Time = 0.5
+Ingredients = { Iron_Plate = 2 }
+Output = { Iron_Gear_Wheel = 1 }
+
+[Iron_Gear_Wheel.Foundry]
+Type = "Item"
+Time = 1
+Ingredients = { Molten_Iron = 10}
+Output = { Iron_Gear_Wheel = 1 }
+
+[Iron_Ore]
+[Iron_Ore.Miner]
+Type = "Resource"
+Time = 1
+Output = { Iron_Ore = 1 }
+
+[Iron_Plate]
+[Iron_Plate.Furnace]
+Type = "Item"
+Time = 3.2
+Ingredients = { Iron_Ore = 1 }
+Output = { Iron_Plate = 1 }
+
+[Iron_Plate.Foundry]
+Type = "Item"
+Time = 3.2
+Ingredients = { Molten_Iron = 20 }
+Output = { Iron_Plate = 2 }
+
+[Lava]
+[Lava.Offshore_Pump]
+Type = "Resource"
+Time = 0
+Output = { Lava = 0 }
+
+[Molten_Copper]
+[Molten_Copper.Lava]
+Type = "Fluid"
+Time = 16
+Ingredients = { Calcite = 1, Lava = 500 }
+Output = { Molten_Copper = 250, Stone = 15 }
+
+[Molten_Copper.Standard]
+Type = "Fluid"
+Time = 32
+Ingredients = { Calcite = 1, Copper_Ore = 50 }
+Output = { Molten_Copper = 500 }
+
+[Molten_Iron]
+[Molten_Iron.Lava]
+Type = "Fluid"
+Time = 16
+Ingredients = { Calcite = 1, Lava = 500 }
+Output = { Molten_Iron = 250, Stone = 10 }
+
+[Molten_Iron.Standard]
+Type = "Fluid"
+Time = 32
+Ingredients = { Calcite = 1, Iron_Ore = 50 }
+Output = { Molten_Iron = 500 }
